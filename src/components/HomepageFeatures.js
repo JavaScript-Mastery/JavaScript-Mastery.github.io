@@ -16,12 +16,12 @@ const FeatureList = [
     ),
   },
   {
-    title: "University Notes",
+    title: "Notes",
     Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
         The notes collected while studying at{" "}
-        <Link to="/university">university</Link>.
+        <Link to="#">Notes</Link>.
       </>
     ),
   },
@@ -30,7 +30,7 @@ const FeatureList = [
     Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
-        A list of <Link to="/showcase">projects</Link> that I am/was working on.
+        A list of <Link to="#">projects</Link> that I am/was working on.
       </>
     ),
   },
