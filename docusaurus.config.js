@@ -15,24 +15,7 @@ module.exports = async function createConfigAsync() {
     organizationName: "javascript-mastery",
     projectName: "JavaScript Mastery",
 
-    plugins: [
-      [
-        "@docusaurus/plugin-content-docs",
-        /** @type {import('@docusaurus/plugin-content-docs').Options} */
-        {
-          id: "university",
-          path: "university",
-          routeBasePath: "university",
-          editUrl:
-            "#",
-          sidebarPath: require.resolve("./sidebars.js"),
-          remarkPlugins: [(await import("remark-math")).default],
-          rehypePlugins: [(await import("rehype-katex")).default],
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-        },
-      ],
-    
+    plugins: [          
       async function plugin(context, options) {
         return {
           name: "docusaurus-plugin-module-alias",
@@ -90,7 +73,7 @@ module.exports = async function createConfigAsync() {
         algolia: {
           appId: "NIXA4HHO8S",
           apiKey: "0e434f5d05dd96ad91008f11f2903066",
-          indexName: "xiaohai-mind-palace-index",
+          indexName: "our-index",
         },
         navbar: {
           title: "JavaScript Mastery",
