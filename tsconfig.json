@@ -1,0 +1,12 @@
+{
+  "extends": "@docusaurus/tsconfig",
+  "include": ["./src/", "./blog/", "global.d.ts"],
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "lib": ["es2021.String", "DOM"]
+  }
+}

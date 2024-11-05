@@ -1,0 +1,35 @@
+.js-live-editor {
+  .editor {
+    font-family: var(--ifm-font-family-monospace);
+    font-size: var(--ifm-code-font-size);
+    border-radius: var(--ifm-pre-border-radius);
+  }
+
+  --pad-left: 45px;
+
+  .editor .codeArea {
+    outline: none;
+    padding-left: var(--pad-left) !important;
+  }
+  .editor pre {
+    padding-left: var(--pad-left) !important;
+  }
+
+  .editor .editorLineNumber {
+    position: absolute;
+    left: 0px;
+    color: #cccc;
+    text-align: right;
+    width: 30px;
+  }
+
+  .outputArea {
+    border: 2px solid var(--ifm-color-primary-light);
+    border-radius: var(--ifm-pre-border-radius);
+    display: block;
+    width: 100%;
+    white-space: pre-wrap;
+    font-size: 18px;
+    background-color: initial;
+  }
+}
