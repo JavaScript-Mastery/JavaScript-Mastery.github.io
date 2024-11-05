@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 const path = require("path");
+const tailwindPlugin = require("./src/plugins/tailwind-config.cjs");
 // const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 module.exports = async function createConfigAsync() {
@@ -11,7 +12,8 @@ module.exports = async function createConfigAsync() {
     baseUrl: "/",
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
-    favicon: "img/favicon.ico",
+    // favicon: "img/favicon.ico",
+    favicon: "img/js.svg",
     organizationName: "javascript-mastery",
     projectName: "JavaScript Mastery",
 
@@ -31,6 +33,7 @@ module.exports = async function createConfigAsync() {
         };
       },
       "docusaurus-plugin-sass",
+      tailwindPlugin,
     ],
     presets: [
       [
@@ -70,11 +73,11 @@ module.exports = async function createConfigAsync() {
             hideable: true,
           },
         },
-        algolia: {
-          appId: "NIXA4HHO8S",
-          apiKey: "0e434f5d05dd96ad91008f11f2903066",
-          indexName: "our-index",
-        },
+        // algolia: {
+        //   appId: "NIXA4HHO8S",
+        //   apiKey: "0e434f5d05dd96ad91008f11f2903066",
+        //   indexName: "our-index",
+        // },
         navbar: {
           title: "JavaScript Mastery",
           hideOnScroll: true,
