@@ -2,7 +2,7 @@
 // Note: type annotations allow type checking and IDEs autocompletion
 const path = require("path");
 const tailwindPlugin = require("./src/plugins/tailwind-config.cjs");
-// const lightCodeTheme = require("prism-react-renderer/themes/github");
+const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 module.exports = async function createConfigAsync() {
   /** @type {import('@docusaurus/types').Config} */
@@ -17,7 +17,7 @@ module.exports = async function createConfigAsync() {
     organizationName: "javascript-mastery",
     projectName: "JavaScript Mastery",
 
-    plugins: [          
+    plugins: [
       async function plugin(context, options) {
         return {
           name: "docusaurus-plugin-module-alias",
@@ -42,8 +42,7 @@ module.exports = async function createConfigAsync() {
         ({
           docs: {
             sidebarPath: require.resolve("./sidebars.js"),
-            editUrl:
-              "#",
+            editUrl: "#",
             remarkPlugins: [(await import("remark-math")).default],
             rehypePlugins: [(await import("rehype-katex")).default],
             // Equivalent to `enableUpdateBy`.
@@ -53,8 +52,7 @@ module.exports = async function createConfigAsync() {
           },
           blog: {
             showReadingTime: true,
-            editUrl:
-              "#",
+            editUrl: "#",
             remarkPlugins: [(await import("remark-math")).default],
             rehypePlugins: [(await import("rehype-katex")).default],
           },
@@ -97,7 +95,7 @@ module.exports = async function createConfigAsync() {
             { to: "/blog", label: "Blog", position: "left" },
             { to: "/about", label: "About", position: "right" },
             {
-              href: "#",
+              href: "https://github.com/javascript-mastery/javascript-mastery.github.io",
               label: "GitHub",
               position: "right",
             },
@@ -138,9 +136,22 @@ module.exports = async function createConfigAsync() {
           copyright: `Copyright © ${new Date().getFullYear()} JavaScript Mastery, Inc. Built with Docusaurus.`,
         },
         prism: {
-          theme: darkCodeTheme,
+          theme: lightCodeTheme,
           darkTheme: darkCodeTheme,
-          additionalLanguages: ["csharp", "nginx"],
+          additionalLanguages: [
+            "csharp",
+            "nginx",
+            "java",
+            "latex",
+            "haskell",
+            "matlab",
+            "PHp",
+            "powershell",
+            "bash",
+            "diff",
+            "json",
+            "scss",
+          ],
         },
       }),
     stylesheets: [
