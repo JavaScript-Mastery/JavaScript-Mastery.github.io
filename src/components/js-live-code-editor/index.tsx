@@ -25,7 +25,7 @@ const formatOutput = (outputLines: any[]) => {
     if (line !== window) {
       formatedLine = inspect(line);
     }
-    result += `${idx + 1}:  ${formatedLine}\n`;
+    result += `${formatedLine}\n`;
   });
   return result;
 };
@@ -164,10 +164,10 @@ export default function JSEditor({
   }, [run]);
   return (
     <section className="js-live-editor margin-bottom--md">
-      <i>{title}</i>
+      <i className="p-2 border-solid border-2 border-gray-500 rounded">{title}</i>
       <div className="shadow--md thin-scrollbar">
         <Editor
-          className="editor"
+          className="editor border-solid border-2 border-gray-500 rounded"
           textareaClassName="codeArea"
           style={darkCodeTheme.plain}
           padding={10}

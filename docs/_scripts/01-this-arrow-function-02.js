@@ -10,7 +10,7 @@ function Person(name) {
   };
 }
 
-const person = new Person("xiaohai");
+const person = new Person("Ajay");
 // polyfill: these two ways of defining functions have the same effect
 person.sayName();
 person.sayNameFunc();

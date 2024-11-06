@@ -13,7 +13,7 @@ class Person {
   };
 }
 
-const person1 = new Person("xiaohai");
+const person1 = new Person("Ajay");
 
 person1.sayNameMethod();
 person1.sayNamePropFunc();

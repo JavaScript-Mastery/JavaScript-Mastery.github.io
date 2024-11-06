@@ -3,7 +3,7 @@ function sayNameFunc() {
 }
 
 const person = {
-  name: "xiaohai",
+  name: "Ajay",
   sayName: sayNameFunc,
 };
 
@@ -12,5 +12,5 @@ const home = {
   owner: person,
 };
 
-person.sayName(); // Hello, my name is xiaohai
-home.owner.sayName(); // Hello, my name is xiaohai
+person.sayName(); // Hello, my name is Ajay
+home.owner.sayName(); // Hello, my name is Ajay

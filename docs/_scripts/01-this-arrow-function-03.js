@@ -5,7 +5,7 @@ function Person(name) {
   };
 }
 
-const person1 = new Person("xiaohai");
+const person1 = new Person("Ajay");
 const person2 = new Person("dan-dan");
 
 person2.sayName();

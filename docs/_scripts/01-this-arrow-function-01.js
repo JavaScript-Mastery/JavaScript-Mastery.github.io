@@ -1,12 +1,12 @@
 const person1 = {
-  Name: "xiaohai",
+  Name: "Ajay",
   sayName: () => {
     console.log(`Hello, my name is ${this.Name}`);
   },
 };
 
 const person2 = {};
-person2.Name = "xiaohai";
+person2.Name = "Ajay";
 person2.sayName = () => {
   console.log(`Hello, my name is ${this.Name}`);
 };
@@ -14,7 +14,7 @@ person2.sayName = () => {
 // pre-es6
 var self = this; // captures this
 const person3 = {};
-person3.Name = "xiaohai";
+person3.Name = "Ajay";
 person3.sayName = function () {
   console.log(`Hello, my name is ${self.Name}`);
 };

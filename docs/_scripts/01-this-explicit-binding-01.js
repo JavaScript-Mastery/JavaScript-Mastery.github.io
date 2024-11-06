@@ -3,7 +3,7 @@ function sayNameFunc() {
 }
 
 const person = {
-  Name: "xiaohai",
+  Name: "Ajay",
 };
 
 const sayNameBinded = function () {
