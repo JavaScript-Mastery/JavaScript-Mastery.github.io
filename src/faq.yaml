@@ -1,0 +1,89 @@
+#
+# JavaScript Mastery Learning FAQs
+#
+
+- question: What is JavaScript Mastery?
+  tags: ["General"]
+  answer: |-
+    JavaScript Mastery is an educational platform designed to help learners gain in-depth knowledge of JavaScript and its ecosystem. It covers topics from basic JavaScript concepts to advanced frameworks and tools.
+
+    Our content includes:
+    
+    - Interactive tutorials and code examples.
+    - Video lessons for step-by-step learning.
+    - Real-world projects to build hands-on experience.
+    - Expert guidance and best practices.
+
+- question: Who can benefit from JavaScript Mastery?
+  tags: ["General", "Learning Path"]
+  answer: |-
+    JavaScript Mastery is perfect for:
+    
+    - Beginners looking to start their coding journey.
+    - Front-end developers aiming to enhance their skills.
+    - Full-stack developers who want to deepen their understanding of JavaScript frameworks.
+    - Professionals preparing for technical interviews.
+    - Anyone looking to stay up-to-date with the latest JavaScript trends and technologies.
+
+- question: What topics does JavaScript Mastery cover?
+  tags: ["Content"]
+  answer: |-
+    JavaScript Mastery covers a wide array of topics including:
+
+    - Core JavaScript (ES6+ features)
+    - Advanced concepts (closures, event loop, asynchronous programming)
+    - Front-end frameworks like React, Angular, Vue.js
+    - State management libraries such as Redux and Zustand
+    - Backend development with Node.js and Express.js
+    - Modern build tools (Webpack, Vite, Rollup)
+    - UI/UX design tips and responsive layouts with Tailwind CSS
+    - Best practices and performance optimization
+
+- question: How can I get started with JavaScript Mastery?
+  tags: ["Getting Started"]
+  answer: |-
+    To start learning with JavaScript Mastery:
+
+    1. Visit our website and sign up for an account.
+    2. Browse through our beginner-friendly courses or choose an advanced module if you're an experienced developer.
+    3. Join our community forums to interact with peers and ask questions.
+    4. Follow the learning paths and complete projects for a comprehensive learning experience.
+
+    Get started here: [JavaScript Mastery Home](https://javascriptmastery.io/)
+
+- question: Does JavaScript Mastery offer certifications?
+  tags: ["Certification"]
+  answer: |-
+    Yes, JavaScript Mastery offers certifications upon course completion. Each course comes with assessments and project requirements. Successfully completing them will earn you a certificate of proficiency which you can add to your resume or LinkedIn profile.
+
+- question: Is there support available if I get stuck?
+  tags: ["Support"]
+  answer: |-
+    Absolutely! JavaScript Mastery provides:
+    
+    - A detailed FAQ section for common questions.
+    - Dedicated community support via forums and chat.
+    - Email support for course-related queries.
+    - Access to mentorship and expert Q&A sessions in select premium courses.
+    
+    Visit our [Support Page](https://javascriptmastery.io/support) for more details.
+
+- question: Are there any free resources available?
+  tags: ["Resources"]
+  answer: |-
+    Yes, we offer:
+    
+    - Free tutorials and blog posts on our [JavaScript Mastery Blog](https://javascriptmastery.io/blog)
+    - Free access to certain video lessons and code snippets.
+    - Open-source projects on our GitHub for practice.
+
+- question: How do I join the JavaScript Mastery community?
+  tags: ["Community"]
+  answer: |-
+    Joining our community is simple:
+    
+    - Sign up for an account on our website.
+    - Access our forums and chat groups.
+    - Follow us on social media for updates and engage with other learners and developers.
+    
+    Join today: [Community Hub](https://javascriptmastery.io/community)

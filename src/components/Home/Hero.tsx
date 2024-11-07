@@ -3,12 +3,12 @@ import Link from '@docusaurus/Link';
 
 const Hero: React.FC = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 min-h-screen gap-8 items-center bg-gradient-to-br from-[#1f1c2e] to-[#4285f4] text-white px-2 py-10 dark:from-gray-900 dark:to-gray-800 px-4">
+    <section className="noise-bg grid grid-cols-1 lg:grid-cols-2 min-h-screen gap-8 items-center px-6">
       <div className="text-center lg:text-left">
-        <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">
+        <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
           Master JavaScript with <span className="text-yellow-300 dark:text-yellow-400">Confidence</span>
         </h1>
-        <p className="text-lg lg:text-xl opacity-90 mb-6">
+        <p className="text-lg lg:text-xl opacity-90 mb-8">
           Join thousands of learners in mastering JavaScript from basics to advanced topics. Start your journey to becoming a JavaScript pro today!
         </p>
         <Link to="/docs/">

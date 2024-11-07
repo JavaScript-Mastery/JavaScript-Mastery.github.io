@@ -6,13 +6,12 @@ import Layout from "@theme/Layout";
 import Hero from "@src/components/Home/Hero";
 import About from "@src/components/Home/About";
 import WhyLearnJavaScript from "@src/components/Home/WhyLearnJavaScript";
-import Courses from "@src/components/Home/Courses";
-import TopProjects from "@src/components/Home/TopProjects";
-import Practice from "@src/components/Home/Practice";
+// import Testimonials from "@src/components/Home/Testimonials";
+// import Blog from "@src/components/Home/Blog";
+// import GetStarted from "@src/components/Home/GetStarted";
+import Resources from "@src/components/Home/Resources";
 import Community from "@src/components/Home/Community";
-import Testimonials from "@src/components/Home/Testimonials";
-import Blog from "@src/components/Home/Blog";
-import GetStarted from "@src/components/Home/GetStarted";
+import Help from "@src/components/Home/Help";
 
 export default function Home() {
   return (
@@ -23,13 +22,15 @@ export default function Home() {
       <Hero />
       <About />
       <WhyLearnJavaScript />
-      <Courses />
-      <TopProjects />
-      <Practice />
+      {/* <Testimonials /> */}
+      {/* <Blog /> */}
+      {/* <GetStarted /> */}
+      <div className="z-0">
+        <Resources />
+        <Help className="-mb-56" />
+      </div>
+
       <Community />
-      <Testimonials />
-      <Blog />
-      <GetStarted />
     </Layout>
   );
 }
