@@ -2,7 +2,7 @@ import React from 'react';
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 
-export default function HelpSection({ className = '' }) {
+export default function Help({ className = '' }) {
   return (
     <section className="px-4 pt-16">
       <div

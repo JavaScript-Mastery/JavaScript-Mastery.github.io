@@ -9,7 +9,7 @@ import ReactMarkdown from 'react-markdown';
 
 import FAQs from '../faq.js';
 import { useEffect } from 'react';
-import HelpSection from '@src/components/Home/Help';
+import Help from '@src/components/Home/Help';
 
 const tags = FAQs.reduce((allTags, faq) => {
   if (!faq.tags) return allTags;
@@ -228,7 +228,7 @@ export default function FAQPage() {
         </div>
       </section>
 
-      <HelpSection className="relative z-10 border-none mb-2" />
+      <Help className="border-none" />
       <Footer /> 
     </Layout>
   );
