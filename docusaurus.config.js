@@ -50,12 +50,6 @@ module.exports = async function createConfigAsync() {
             // Equivalent to `enableUpdateTime`.
             showLastUpdateTime: true,
           },
-          blog: {
-            showReadingTime: true,
-            editUrl: "#",
-            remarkPlugins: [(await import("remark-math")).default],
-            rehypePlugins: [(await import("rehype-katex")).default],
-          },
           theme: {
             customCss: require.resolve("./src/css/custom.css"),
           },
@@ -92,7 +86,7 @@ module.exports = async function createConfigAsync() {
               position: "left",
               label: "Docs",
             },
-            { to: "/blog", label: "Blog", position: "left" },
+            { to: "/blogs", label: "Blogs", position: "left" },
             { to: "/about", label: "About", position: "right" },
             {
               href: "https://github.com/javascript-mastery/javascript-mastery.github.io",

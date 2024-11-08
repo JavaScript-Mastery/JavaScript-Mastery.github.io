@@ -79,7 +79,7 @@ const Author = ({ username }: { username: string }) => {
   );
 };
 
-const BlogListPage: React.FC = () => {
+const Blogs: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
@@ -227,4 +227,4 @@ const BlogListPage: React.FC = () => {
   );
 };
 
-export default BlogListPage;
+export default Blogs;
