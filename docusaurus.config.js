@@ -111,11 +111,6 @@ module.exports = async function createConfigAsync() {
               title: "More",
               items: [
                 {
-                  label: "Blog",
-                  to: "/blog",
-                },
-
-                {
                   label: "Resources",
                   href: "#",
                 },
