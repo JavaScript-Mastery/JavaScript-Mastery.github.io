@@ -87,6 +87,8 @@ module.exports = async function createConfigAsync() {
               label: "Docs",
             },
             { to: "/blogs", label: "Blogs", position: "left" },
+            { to: "/features", label: "Features", position: "left" },
+
             { to: "/about", label: "About", position: "right" },
             {
               href: "https://github.com/javascript-mastery/javascript-mastery.github.io",

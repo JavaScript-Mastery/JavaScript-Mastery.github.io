@@ -1,23 +1,47 @@
-import React from 'react';
+import React, { useState, ReactNode } from 'react';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 interface CardProps {
   title: string;
-  description: string;
-  image: string;
-  footerContent?: React.ReactNode;
+  content: string | ReactNode;
+  footer?: ReactNode;
+  expandable?: boolean;
+  className?: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, description, image, footerContent }) => {
+const Card: React.FC<CardProps> = ({ title, content, footer, expandable = false, className }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleExpandToggle = () => {
+    setIsExpanded((prev) => !prev);
+  };
+
   return (
-    <div className="max-w-sm rounded-lg shadow-xl bg-white dark:bg-gray-800 overflow-hidden transform hover:scale-105 transition-all duration-300 ease-in-out">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="p-4">
-        <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{title}</h3>
-        <p className="text-gray-600 dark:text-gray-300 mt-2">{description}</p>
+    <div
+      className={`rounded-lg shadow-lg p-6 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 transition-transform transform hover:scale-112 hover:shadow-2xl ${className}`}
+    >
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">{title}</h2>
+        {expandable && (
+          <button
+            onClick={handleExpandToggle}
+            aria-label={isExpanded ? 'Collapse content' : 'Expand content'}
+            className="text-gray-500 dark:text-gray-400 bg-white hover:bg-gray-200 hover:text-gray-700 dark:hover:text-gray-200 transition-colors border-none dark:bg-gray-800 dark:hover:bg-gray-700 rounded"
+          >
+            {isExpanded ? (
+              <FiChevronUp className="w-5 h-5" />
+            ) : (
+              <FiChevronDown className="w-5 h-5" />
+            )}
+          </button>
+        )}
       </div>
-      {footerContent && (
-        <div className="bg-gray-100 dark:bg-gray-900 p-4 text-right">
-          {footerContent}
+      <div className={`text-gray-700 dark:text-gray-300 transition-max-height duration-300 ease-in-out ${isExpanded ? 'max-h-screen' : 'max-h-24 overflow-hidden'}`}>
+        {content}
+      </div>
+      {footer && (
+        <div className="pt-4 mt-4 border-t border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400">
+          {footer}
         </div>
       )}
     </div>
